@@ -39,10 +39,10 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#">Search Sitters</a></li>
+            <li><a href="#" id="show-sitter-search">Search Sitters</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a class="profile-link" href="#"><img class="profile-pic-nav" src="profile.jpg" /></a></li>
+            <li><a class="profile-link" href="#"><img class="profile-pic-nav img-circle" src="profile.jpg" /></a></li>
             <li>
               <button type="button" class="btn btn-default navbar-btn">
                 <span class="glyphicon glyphicon-bell"></span>
@@ -53,12 +53,54 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
+    <div id="sitter-searchbar">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse">
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                Find a 
+                <select class="form-control input-sm">
+                  <option>Dog</option>
+                  <option>Cat</option>
+                  <option>Bird</option>
+                  <option>Rodent</option>
+                  <option>Reptile</option>
+                  <option>Other</option>
+                </select>
+                sitter within
+                <select class="form-control input-sm">
+                  <option>1 mile</option>
+                  <option>3 miles</option>
+                  <option>5 miles</option>
+                  <option>10 miles</option>
+                  <option>50 miles</option>
+                </select>
+                of 
+                <input type="text" class="form-control input-sm" placeholder="City, State, or Zip">
+              </div>
+              <button type="submit" class="btn btn-default btn-sm">Search</button>
+            </form>
+            </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
 
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-10">
-          <h1><img class="profile-pic" src="profile.jpg" />Tom Hardy</h1>
+          <img class="profile-pic img-circle" src="profile.jpg" />
+          <h1>Tom Hardy<br /><small>Cambridge, MA</small></h1>
         </div>
       </div>
     </div><!-- /.container -->
@@ -102,5 +144,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/searchbar.js"></script>
   </body>
 </html>

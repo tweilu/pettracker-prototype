@@ -17,10 +17,16 @@ body {
 .profile-pic {
 	width:140px;
 	padding:20px;
+	float:left;
 }
 
 .profile-container {
 	border-top: 1px solid #eee;
+}
+
+.navbar form {
+	width:100%;
+    text-align: center;
 }
 
 /*
@@ -34,7 +40,7 @@ body {
 @media (min-width: 768px) {
   .sidebar {
     position: fixed;
-    top: 221px;
+    top: 191px;
     bottom: 0;
     left: 0;
     z-index: 1000;
