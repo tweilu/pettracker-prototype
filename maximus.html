@@ -35,7 +35,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">PetTracker</a>
+          <a class="navbar-brand" href="index.html">PetTracker</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -95,44 +95,27 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-10">
-          <img class="profile-pic img-circle" src="profile.jpg" />
-          <h1>Tom Hardy<br /><small>Cambridge, MA</small></h1>
+    <div class="container">
+        <div class="pet-pic-upload">
+          <img class="pet-pic" src="pet.jpg" />
         </div>
-      </div>
+        <h1>Maximus<br /><small>Cambridge, MA</small></h1>
+        <p class="pet-description-text">I'm Maximus! You can call me Max. I love to play fetch in the park everyday. I also love chewing on things, but I'm not supposed to. I love to cuddle!</p>
     </div><!-- /.container -->
 
-    <div class="container-fluid profile-container">
-      <div class="row tabbable">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#owner" data-toggle="tab">Owner Profile</a></li>
-            <li><a href="#sitter" data-toggle="tab">Sitter Profile</a></li>
-          </ul>
-        </div>
-        <div class="tab-content">
-          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main tab-pane active" id="owner">
-            <h1 class="page-header">My Pets</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2 class="page-header">Pet Schedule</h2>
+          <div id="pet-schedule">
+            <img id="play-icon" class="schedule-icon" src="play-icon.jpg">
 
-            <h2 class="sub-header">Maximus</h2>
-
-            <div class="row">
-              <div class="col-md-12">
-                <a href="newpet.html">+ Add Pet</a>
-              </div>
-            </div>
             
-          </div>
 
-          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main tab-pane" id="sitter">
-            <h1 class="page-header">Sitter Profile</h1>
-
-            <h2 class="sub-header">sup</h2>
-          
           </div>
+        </div>
+        <div class="col-md-4">
+          <h2 class="page-header">Special Notes</h2>
         </div>
       </div>
     </div>
@@ -142,8 +125,11 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.ui.draggable.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/searchbar.js"></script>
+    <script src="js/schedule.js"></script>
   </body>
 </html>

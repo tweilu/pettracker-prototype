@@ -29,6 +29,33 @@ body {
     text-align: center;
 }
 
+.pet-pic-upload {
+	float:left;
+}
+.pet-pic {
+	border-radius: 10px;
+	margin-right:20px;
+	margin-bottom:20px;
+	margin-top: 20px;
+	width:200px;
+}
+.pet-description {
+	width:600px!important;
+}
+.pet-description-text {
+	color:#999;
+}
+
+.schedule-icon {
+	width:50px;
+	border-radius: 5px;
+}
+#pet-schedule {
+	height:300px;
+	border:1px solid #999;
+	border-radius: 5px;
+}
+
 /*
  * Sidebar
  */
