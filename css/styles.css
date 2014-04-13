@@ -6,3 +6,11 @@ body {
   padding: 40px 15px;
   text-align: center;
 }
+
+.profile-link {
+	padding:10px!important;
+}
+
+.profile-pic {
+	width:30px;
+}
