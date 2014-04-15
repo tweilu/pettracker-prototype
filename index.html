@@ -26,6 +26,7 @@
 
   <body>
 
+    <!--
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-2"></div>
@@ -34,13 +35,14 @@
           <h1>Tom Hardy<br /><small>Cambridge, MA</small></h1>
         </div>
       </div>
-    </div><!-- /.container -->
+    </div>--><!-- /.container -->
 
     <div class="container-fluid">
       <div class="row">
+
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">My Pets</a></li>
+            <li class="active"><a href="index.html">My Pets</a></li>
             <li><a href="#">Maximus</a></li>
             <li><a href="#">Frodo</a></li>
           </ul>
@@ -51,13 +53,44 @@
           </ul>
           <ul class="nav nav-sidebar">
         </div>
+
+
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">My Pets</h1>
-
-          <h2 class="sub-header">Maximus</h2>
-
           <div class="row">
             <div class="col-md-12">
+              <a href="maximus.html">
+                <div class="my-pet-entry">
+                  <div class="checkbox pull-left">
+                    <label>
+                      <input type="checkbox">
+                    </label>
+                  </div>
+                  <img class="pull-left my-pet-pic img-circle" src="img/maximus.jpg" />
+                  <h2>
+                    Maximus<br />
+                    <small>Dog - Being Sat by <img class="sitter-pic img-circle" src="img/jgl.png" /> Joseph Gordon-Levitt</small>
+                  </h2>
+                </div>
+              </a>
+
+              <a href="maximus.html">
+                <div class="my-pet-entry">
+                  <div class="checkbox pull-left">
+                    <label>
+                      <input type="checkbox">
+                    </label>
+                  </div>
+                  <img class="pull-left my-pet-pic img-circle" src="img/frodo.jpg" />
+                  <h2>
+                    Frodo<br />
+                    <small>Rodent - No Sitter</small>
+                  </h2>
+                </div>
+              </a>
+
+
+
               <a href="newpet.html">+ Add Pet</a>
             </div>
           </div>

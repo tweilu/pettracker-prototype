@@ -1,11 +1,19 @@
+/* GLOBAL */
 body {
   
 }
-
-.starter-template {
-  padding: 40px 15px;
+a:hover {
+  text-decoration: none;
 }
 
+/* BOOTSTRAP OVERRIDES */
+.checkbox {
+  height:100%;
+  padding-top:30px;
+  padding-right: 30px;
+}
+
+/* OWN PROFILE STUFF */
 .profile-link {
 	padding:10px!important;
 }
@@ -26,12 +34,26 @@ body {
 
 .navbar form {
 	width:100%;
-    text-align: center;
+  text-align: center;
 }
 
-.pet-pic-upload {
-	float:left;
+/* MY PETS page */
+.my-pet-entry {
+  padding:10px;
+  height:120px;
 }
+.my-pet-entry:hover {
+  background-color: #f5f5f5;
+}
+.my-pet-pic {
+  width:100px;
+  margin-right:10px;
+}
+.sitter-pic {
+  width:30px;
+}
+
+/* INDIVIDUAL PETS page */
 .pet-pic {
 	border-radius: 10px;
 	margin-right:20px;
@@ -45,7 +67,6 @@ body {
 .pet-description-text {
 	color:#999;
 }
-
 .schedule-icon {
 	width:50px;
 	border-radius: 5px;
