@@ -29,18 +29,7 @@
 
   <body>
 
-    <!--
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-10">
-          <img class="profile-pic img-circle" src="profile.jpg" />
-          <h1>Tom Hardy<br /><small>Cambridge, MA</small></h1>
-        </div>
-      </div>
-    </div>--><!-- /.container -->
-
-    <div class="container-fluid">
+     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar" id="sidebar" role="navigation">
           <ul class="nav nav-sidebar">
@@ -59,57 +48,43 @@
 
         <div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2 main">
 
-          <h1 class="page-header">Pets I'm Sitting</h1>
+          <div class="row">
+            <div class="col-md-8" style="height:259px;">
 
-          <div class="row row-offcanvas row-offcanvas-left">
-            <div class="calendar">
-              <h2>Pet Appointments</h2>
-              <div id="calendar"></div>
-            </div>
+              <div class="pet-pic-upload">
+                <img class="pet-pic" src="img/frog.jpg" />
+              </div>
+              <h1>Frog <small>Owner: Joseph Gordon-Levitt</small><br /><small>Cambridge, MA</small></h1>
+              <p class="pet-description-text">I'm a frog named Frog, and I love boxes.</p>
+              
 
-            <div id="mypets-container" class="col-md-12">
-
-              <div class="controls">
+              <div class="sitter-info">
+                <p><a href="#">Stop Sitting</a></p>
+                <!--
                 <form class="form-inline" role="form">
-                  <button type="button" class="btn btn-default" disabled>
-                    <span class="glyphicon glyphicon-trash"></span>
-                  </button>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="sitter-email" placeholder="Sitter Email Address">
+                  </div>
+                  <button type="submit" id="sitter-submit-btn" class="btn btn-default">Add Sitter</button>
                 </form>
-
-                
+              -->
               </div>
 
-              <a href="john.html">
-                <div class="my-pet-entry">
-                  <div class="checkbox pull-left">
-                    <label>
-                      <input id="maximus-checkbox" onchange="checkbox_change" type="checkbox">
-                    </label>
-                  </div>
-                  <img class="pull-left my-pet-pic img-circle" src="img/john.jpg" />
-                  <h2>
-                    John <small>(Joseph Gordon-Levitt <img class="sitter-pic img-circle" src="img/jgl.png" />)</small><br />
-                    <small>Cat</small>
-                  </h2>
-                </div>
-              </a>
+            
 
-              <a href="frodo.html">
-                <div class="my-pet-entry">
-                  <div class="checkbox pull-left">
-                    <label>
-                      <input id="frodo-checkbox" type="checkbox">
-                    </label>
-                  </div>
-                  <img class="pull-left my-pet-pic img-circle" src="img/frog.jpg" />
-                  <h2>
-                    Frog <small>(Joseph Gordon-Levitt <img class="sitter-pic img-circle" src="img/jgl.png" />)</small><br />
-                    <small>Other - Frog</small>
-                  </h2>
-                </div>
-              </a>
-              
             </div>
+
+            <div class="col-md-4">
+              <h2>Appointments</h2>
+              <div id="calendar" style="margin-top:10px"></div>
+            </div>
+
+          </div>
+          
+
+          <h2 class="page-header">Daily Schedule</h2>
+          <div id="pet-schedule">
+            <img id="play-icon" class="schedule-icon" src="img/play-icon.jpg">
           </div>
         </div>
       </div>
@@ -120,9 +95,12 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.ui.draggable.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/mypets.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/schedule.js"></script>
     <script type="text/javascript" src="js/fullcalendar.min.js"></script>
   </body>
 </html>
