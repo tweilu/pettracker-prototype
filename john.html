@@ -33,13 +33,13 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar" id="sidebar" role="navigation">
           <ul class="nav nav-sidebar">
-            <li class="active category"><a href="index.html">My Pets</a></li>
+            <li class="category"><a href="index.html">My Pets</a></li>
             <li class="subcategory"><a href="maximus.html">Maximus</a></li>
             <li class="subcategory"><a href="frodo.html">Frodo</a></li>
           </ul>
           <ul class="nav nav-sidebar">
             <li class ="category"><a href="sittingpets.html">Pets I'm Sitting</a></li>
-            <li class="subcategory"><a href="john.html">John</a></li>
+            <li class="active subcategory"><a href="john.html">John</a></li>
             <li class="subcategory"><a href="frog.html">Frog</a></li>
           </ul>
           <ul class="nav nav-sidebar">
@@ -48,41 +48,37 @@
 
         <div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2 main">
 
-          <div class="row">
-            <div class="col-md-8" style="height:259px;">
 
-              <div class="pet-pic-upload">
+          <h1 class="page-header">
+            John
+            <span style="float:right">
+              <small>
+                Owner: Mila Kunis | <a href="#">Stop Sitting</a>
+              </small>
+            </span>
+          </h1>
+
+          <div class="row">
+            <div class="col-md-9">
+
+              <div class="pull-left">
                 <img class="pet-pic" src="img/john.jpg" />
               </div>
-              <h1>John <small>Owner: Joseph Gordon-Levitt</small><br /><small>Cambridge, MA</small></h1>
-              <p class="pet-description-text">I'm a cat named John, and I love boxes.</p>
-              
 
-              <div class="sitter-info">
-                <p><a href="#">Stop Sitting</a></p>
-                <!--
-                <form class="form-inline" role="form">
-                  <div class="form-group">
-                    <input type="email" class="form-control" id="sitter-email" placeholder="Sitter Email Address">
-                  </div>
-                  <button type="submit" id="sitter-submit-btn" class="btn btn-default">Add Sitter</button>
-                </form>
-              -->
-              </div>
-
-            
+              <h1><small>Located in Cambridge, MA</small></h1>
+              <p class="pet-description-text">I'm a cat named John, and I love boxes.</p>            
 
             </div>
 
-            <div class="col-md-4">
-              <h2>Appointments</h2>
-              <div id="calendar" style="margin-top:10px"></div>
+            <div class="col-md-3 calendar">
+              <h3>Appointments</h3>
+              <div id="calendar"></div>
             </div>
 
           </div>
           
 
-          <h2 class="page-header">Daily Schedule</h2>
+          <h2 class="page-header" style="margin-top:0">Daily Schedule</h2>
           <div id="pet-schedule">
             <img id="play-icon" class="schedule-icon" src="img/play-icon.jpg">
           </div>
@@ -100,7 +96,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/sidebar.js"></script>
-    <script src="js/schedule.js"></script>
+    <script src="js/petpage.js"></script>
     <script type="text/javascript" src="js/fullcalendar.min.js"></script>
   </body>
 </html>

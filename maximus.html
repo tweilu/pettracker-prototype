@@ -33,8 +33,8 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar" id="sidebar" role="navigation">
           <ul class="nav nav-sidebar">
-            <li class="active category"><a href="index.html">My Pets</a></li>
-            <li class="subcategory"><a href="maximus.html">Maximus</a></li>
+            <li class="category"><a href="index.html">My Pets</a></li>
+            <li class="active subcategory"><a href="maximus.html">Maximus</a></li>
             <li class="subcategory"><a href="frodo.html">Frodo</a></li>
           </ul>
           <ul class="nav nav-sidebar">
@@ -48,40 +48,29 @@
 
         <div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2 main">
 
-          <div class="row">
-            <div class="col-md-8" style="height:259px;">
+          <h1 class="page-header">Maximus<span style="float:right"><small>Sitter: Joseph Gordon-Levitt | <a href="#">Remove</a></small></span></h1>
 
-              <div class="pet-pic-upload">
+          <div class="row">
+            <div class="col-md-9">
+
+              <div class="pull-left">
                 <img class="pet-pic" src="img/maximus.jpg" />
               </div>
-              <h1>Maximus<br /><small>Cambridge, MA</small></h1>
+              <h1><small>Located in Cambridge, MA</small></h1>
               <p class="pet-description-text">I'm Maximus! You can call me Max. I love to play fetch in the park everyday. I also love chewing on things, but I'm not supposed to. I love to cuddle!</p>
               
-
-              <div class="sitter-info">
-                <p>Sitter: Joseph Gordon-Levitt | <a href="#">Remove</a></p>
-                <!--
-                <form class="form-inline" role="form">
-                  <div class="form-group">
-                    <input type="email" class="form-control" id="sitter-email" placeholder="Sitter Email Address">
-                  </div>
-                  <button type="submit" id="sitter-submit-btn" class="btn btn-default">Add Sitter</button>
-                </form>
-              -->
-              </div>
-
-            
-
             </div>
 
-            <div class="col-md-4">
-              <div id="calendar" style="margin-top:10px"></div>
+
+            <div class="col-md-3 calendar">
+              <h3>Appointments</h3>
+              <div id="calendar"></div>
             </div>
 
           </div>
           
 
-          <h2 class="page-header">Daily Schedule</h2>
+          <h2 class="page-header" style="margin-top:0">Daily Schedule</h2>
           <div id="pet-schedule">
             <img id="play-icon" class="schedule-icon" src="img/play-icon.jpg">
           </div>
@@ -98,8 +87,7 @@
     <script src="js/jquery.ui.draggable.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/sidebar.js"></script>
-    <script src="js/schedule.js"></script>
+    <script src="js/petpage.js"></script>
     <script type="text/javascript" src="js/fullcalendar.min.js"></script>
   </body>
 </html>

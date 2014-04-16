@@ -11,8 +11,7 @@ $(document).ready(function() {
 	            title  : 'Playdate',
 	            start  : '2014-04-14'
 	        }
-	    ],
-	    height:200
+	    ]
     });
 
 	$('#play-icon').draggable({containment: 'parent'});
