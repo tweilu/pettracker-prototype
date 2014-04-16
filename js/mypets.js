@@ -84,9 +84,4 @@ $(document).ready(function() {
 	$("#addpet-img-input").change(function(){
 	    readURL(this);
 	});
-
-	$('[data-toggle=offcanvas]').click(function() {
-      	$('.row-offcanvas').toggleClass('active');
-    });
-
 });
