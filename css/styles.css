@@ -172,6 +172,11 @@ input[type=file] {
   background-color: #428bca;
 }
 
+.logo {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
 @media (min-width: 768px) {
   .main {
     padding-right: 40px;
