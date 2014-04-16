@@ -41,9 +41,8 @@
     </div>--><!-- /.container -->
 
     <div class="container-fluid">
-      <div class="row row-offcanvas row-offcanvas-left">
-
-        <div class="sidebar-offcanvas" id="sidebar" role="navigation">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar" id="sidebar" role="navigation">
           <ul class="nav nav-sidebar">
             <li class="active category"><a href="index.html">My Pets</a></li>
             <li class="subcategory"><a href="#">Maximus</a></li>
@@ -58,15 +57,10 @@
         </div>
 
 
-        <div class="col-sm-9 col-md-10 main">
-          
-          <button type="button" class="btn btn-primary btn-xs btn-sidebar-toggle" data-toggle="offcanvas" data-target="nav-sidebar">
-            <i class="glyphicon glyphicon-chevron-left"></i>
-          </button>
-
+        <div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2 main">
           <h1 class="page-header">My Pets</h1>
 
-          <div class="row row-offcanvas row-offcanvas-left">
+          <div class="row">
             <div class="calendar">
               <h2>Pet Appointments</h2>
               <div id="calendar"></div>
