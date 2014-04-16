@@ -17,6 +17,22 @@ $(document).ready(function() {
 		});
 	});
 
+	$('#calendar').fullCalendar({
+        // put your options and callbacks here
+        events: [
+	        {
+	            title  : 'Vet',
+	            start  : '2014-04-25'
+	        },
+	        {
+	            title  : 'Playdate',
+	            start  : '2014-04-14'
+	        }
+	    ]
+    });
+
+    
+
 	
 
 	/*
@@ -68,5 +84,9 @@ $(document).ready(function() {
 	$("#addpet-img-input").change(function(){
 	    readURL(this);
 	});
+
+	$('[data-toggle=offcanvas]').click(function() {
+      	$('.row-offcanvas').toggleClass('active');
+    });
 
 });

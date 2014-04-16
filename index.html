@@ -17,6 +17,9 @@
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
 
+    <!-- Calendar styles -->
+    <link rel="stylesheet" type="text/css" href="css/fullcalendar.css" />
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -62,14 +65,37 @@
           </button>
 
           <h1 class="page-header">My Pets</h1>
+
           <div class="row row-offcanvas row-offcanvas-left">
+            <div class="calendar">
+              <h2>Pet Appointments</h2>
+              <div id="calendar"></div>
+            </div>
+
             <div id="mypets-container" class="col-md-12">
+
+              <div class="controls">
+                <form class="form-inline" role="form">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="sitter-email" placeholder="Sitter Email Address" disabled>
+                  </div>
+                  <button type="submit" id="sitter-submit-btn" class="btn btn-default" disabled>Add Sitter</button> |  
+                  <button type="button" class="btn btn-default" disabled>
+                    Remove Sitter
+                  </button> | 
+                  <button type="button" class="btn btn-default" disabled>
+                    <span class="glyphicon glyphicon-trash"></span>
+                  </button>
+                </form>
+
+                
+              </div>
 
               <a href="maximus.html">
                 <div class="my-pet-entry">
                   <div class="checkbox pull-left">
                     <label>
-                      <input type="checkbox">
+                      <input id="maximus-checkbox" onchange="checkbox_change" type="checkbox">
                     </label>
                   </div>
                   <img class="pull-left my-pet-pic img-circle" src="img/maximus.jpg" />
@@ -80,11 +106,11 @@
                 </div>
               </a>
 
-              <a href="maximus.html">
+              <a href="frodo.html">
                 <div class="my-pet-entry">
                   <div class="checkbox pull-left">
                     <label>
-                      <input type="checkbox">
+                      <input id="frodo-checkbox" type="checkbox">
                     </label>
                   </div>
                   <img class="pull-left my-pet-pic img-circle" src="img/frodo.jpg" />
@@ -109,13 +135,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $('[data-toggle=offcanvas]').click(function() {
-          $('.row-offcanvas').toggleClass('active');
-        });
-      });
-    </script>
     <script src="js/mypets.js"></script>
+    <script type="text/javascript" src="js/fullcalendar.min.js"></script>
   </body>
 </html>
