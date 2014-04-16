@@ -1,0 +1,33 @@
+#timeline {
+    background-color: #eeddff;
+    width: 900px;
+    height: 400px;
+    position: relative;
+    left: 60px;
+    top: 100px;
+}
+
+#timelineCanvas {
+    position: absolute;
+}
+
+#timelineImage {
+    position: absolute;
+    z-index: 10;
+    bottom: 2px;
+}
+
+.staticIcon {
+    position: absolute;
+    z-index: 11;
+}
+
+.icon {
+    position: absolute;
+    opacity:0.4;
+    border-radius: 10px;
+}
+
+.icon:hover {
+    opacity:1.0;
+}
