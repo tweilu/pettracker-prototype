@@ -17,6 +17,9 @@
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
 
+    <!-- Calendar styles -->
+    <link rel="stylesheet" type="text/css" href="css/fullcalendar.css" />
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -45,22 +48,43 @@
 
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <div class="pet-pic-upload">
-            <img class="pet-pic" src="img/maximus.jpg" />
-          </div>
-          <h1>Maximus<br /><small>Cambridge, MA</small></h1>
-          <p class="pet-description-text">I'm Maximus! You can call me Max. I love to play fetch in the park everyday. I also love chewing on things, but I'm not supposed to. I love to cuddle!</p>
+          <div class="row">
+            <div class="col-md-8" style="height:259px;">
 
-          <h2 class="page-header">Pet Schedule</h2>
-          <div id="pet-schedule">
-            <img id="play-icon" class="schedule-icon" src="img/play-icon.jpg">
+              <div class="pet-pic-upload">
+                <img class="pet-pic" src="img/maximus.jpg" />
+              </div>
+              <h1>Maximus<br /><small>Cambridge, MA</small></h1>
+              <p class="pet-description-text">I'm Maximus! You can call me Max. I love to play fetch in the park everyday. I also love chewing on things, but I'm not supposed to. I love to cuddle!</p>
+              
+
+              <div class="sitter-info">
+                <p>Sitter: Joseph Gordon-Levitt | <a href="#">Remove</a></p>
+                <!--
+                <form class="form-inline" role="form">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="sitter-email" placeholder="Sitter Email Address">
+                  </div>
+                  <button type="submit" id="sitter-submit-btn" class="btn btn-default">Add Sitter</button>
+                </form>
+              -->
+              </div>
 
             
 
+            </div>
+
+            <div class="col-md-4">
+              <div id="calendar" style="margin-top:10px"></div>
+            </div>
+
           </div>
-          <div class="col-md-4">
-          <h2 class="page-header">Special Notes</h2>
-        </div>
+          
+
+          <h2 class="page-header">Daily Schedule</h2>
+          <div id="pet-schedule">
+            <img id="play-icon" class="schedule-icon" src="img/play-icon.jpg">
+          </div>
         </div>
       </div>
     </div>
@@ -74,7 +98,7 @@
     <script src="js/jquery.ui.draggable.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/searchbar.js"></script>
     <script src="js/schedule.js"></script>
+    <script type="text/javascript" src="js/fullcalendar.min.js"></script>
   </body>
 </html>

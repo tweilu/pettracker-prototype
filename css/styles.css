@@ -106,6 +106,13 @@ input[type=file] {
 .pet-description-text {
 	color:#999;
 }
+.sitter-info {
+  position: absolute;
+  bottom:0;
+  width:100%;
+  padding-right: 50px;
+  text-align: right;
+}
 .schedule-icon {
 	width:50px;
 	border-radius: 5px;
