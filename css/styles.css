@@ -52,8 +52,22 @@ a:hover {
 .sitter-pic {
   width:30px;
 }
+#addpet-form {
+  height:200px;
+}
+.pet-pic-upload {
+  float:left;
+}
 .pet-pic-upload img {
-  
+  width:100px;
+}
+input[type=file] {
+  width:100px;
+  margin-left:10px;
+  color:#fff;
+}
+#addpet-btn {
+  margin-left:30px;
 }
 
 /* INDIVIDUAL PETS page */
