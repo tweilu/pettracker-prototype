@@ -38,26 +38,31 @@
     </div>--><!-- /.container -->
 
     <div class="container-fluid">
-      <div class="row">
+      <div class="row row-offcanvas row-offcanvas-left">
 
-        <div class="col-sm-3 col-md-2 sidebar">
+        <div class="sidebar-offcanvas" id="sidebar" role="navigation">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="index.html">My Pets</a></li>
-            <li><a href="#">Maximus</a></li>
-            <li><a href="#">Frodo</a></li>
+            <li class="active category"><a href="index.html">My Pets</a></li>
+            <li class="subcategory"><a href="#">Maximus</a></li>
+            <li class="subcategory"><a href="#">Frodo</a></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a href="">Pets I'm Sitting</a></li>
-            <li><a href="">John</a></li>
-            <li><a href="">Frog</a></li>
+            <li class ="category"><a href="">Pets I'm Sitting</a></li>
+            <li class="subcategory"><a href="">John</a></li>
+            <li class="subcategory"><a href="">Frog</a></li>
           </ul>
           <ul class="nav nav-sidebar">
         </div>
 
 
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div class="col-sm-9 col-md-10 main">
+          
+          <button type="button" class="btn btn-primary btn-xs btn-sidebar-toggle" data-toggle="offcanvas" data-target="nav-sidebar">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+          </button>
+
           <h1 class="page-header">My Pets</h1>
-          <div class="row">
+          <div class="row row-offcanvas row-offcanvas-left">
             <div id="mypets-container" class="col-md-12">
 
               <a href="maximus.html">
@@ -142,5 +147,12 @@
     <script src="js/bootstrap.min.js"></script>
     <!--
     <script src="js/addpet.js"></script>-->
+    <script>
+      $(document).ready(function() {
+        $('[data-toggle=offcanvas]').click(function() {
+          $('.row-offcanvas').toggleClass('active');
+        });
+      });
+    </script>
   </body>
 </html>
