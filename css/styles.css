@@ -91,6 +91,15 @@ input[type=file] {
   text-align: right;
   margin-right:285px;
 }
+.fc-header {
+  display:none;
+}
+.fc-event-title {
+  display:none;
+}
+.fc-day-number {
+  font-size: .7em;
+}
 
 /* INDIVIDUAL PETS page */
 .pet-pic {

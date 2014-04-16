@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Pet Tracker</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Calendar styles -->
+    <link rel="stylesheet" type="text/css" href="css/fullcalendar.css" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!--
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-10">
+          <img class="profile-pic img-circle" src="profile.jpg" />
+          <h1>Tom Hardy<br /><small>Cambridge, MA</small></h1>
+        </div>
+      </div>
+    </div>--><!-- /.container -->
+
+    <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-left">
+
+        <div class="sidebar-offcanvas" id="sidebar" role="navigation">
+          <ul class="nav nav-sidebar">
+            <li class="category"><a href="index.html">My Pets</a></li>
+            <li class="subcategory"><a href="#">Maximus</a></li>
+            <li class="subcategory"><a href="#">Frodo</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li class ="active category"><a href="">Pets I'm Sitting</a></li>
+            <li class="subcategory"><a href="">John</a></li>
+            <li class="subcategory"><a href="">Frog</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+        </div>
+
+
+        <div class="col-sm-9 col-md-10 main">
+          
+          <button type="button" class="btn btn-primary btn-xs btn-sidebar-toggle" data-toggle="offcanvas" data-target="nav-sidebar">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+          </button>
+
+          <h1 class="page-header">Pets I'm Sitting</h1>
+
+          <div class="row row-offcanvas row-offcanvas-left">
+            <div class="calendar">
+              <h2>Pet Appointments</h2>
+              <div id="calendar"></div>
+            </div>
+
+            <div id="mypets-container" class="col-md-12">
+
+              <div class="controls">
+                <form class="form-inline" role="form">
+                  <button type="button" class="btn btn-default" disabled>
+                    <span class="glyphicon glyphicon-trash"></span>
+                  </button>
+                </form>
+
+                
+              </div>
+
+              <a href="john.html">
+                <div class="my-pet-entry">
+                  <div class="checkbox pull-left">
+                    <label>
+                      <input id="maximus-checkbox" onchange="checkbox_change" type="checkbox">
+                    </label>
+                  </div>
+                  <img class="pull-left my-pet-pic img-circle" src="img/john.jpg" />
+                  <h2>
+                    John <small>(Joseph Gordon-Levitt <img class="sitter-pic img-circle" src="img/jgl.png" />)</small><br />
+                    <small>Cat</small>
+                  </h2>
+                </div>
+              </a>
+
+              <a href="frodo.html">
+                <div class="my-pet-entry">
+                  <div class="checkbox pull-left">
+                    <label>
+                      <input id="frodo-checkbox" type="checkbox">
+                    </label>
+                  </div>
+                  <img class="pull-left my-pet-pic img-circle" src="img/frog.jpg" />
+                  <h2>
+                    Frog <small>(Joseph Gordon-Levitt <img class="sitter-pic img-circle" src="img/jgl.png" />)</small><br />
+                    <small>Other - Frog</small>
+                  </h2>
+                </div>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mypets.js"></script>
+    <script type="text/javascript" src="js/fullcalendar.min.js"></script>
+  </body>
+</html>
