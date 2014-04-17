@@ -80,6 +80,9 @@ input[type=file] {
 .fc-header {
   display:none;
 }
+.fc-event {
+  height:10px;
+}
 .fc-event-title {
   display:none;
 }
