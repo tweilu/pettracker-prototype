@@ -126,7 +126,7 @@ input[type=file] {
   overflow: hidden;
 }
 .pet-description {
-	width:600px!important;
+	width:400px!important;
 }
 .pet-description-text {
 	color:#5e5e5e;
