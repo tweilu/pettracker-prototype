@@ -1,17 +1,21 @@
 $(document).ready(function() {
 
 	var eventdate = '';
+	var eventtodelete = '';
+	var event_id = 2;
 
 	$('#calendar').fullCalendar({
         // put your options and callbacks here
         events: [
 	        {
 	            title  : 'Vet',
-	            start  : '2014-04-25'
+	            start  : '2014-04-25',
+	            id     : 0
 	        },
 	        {
 	            title  : 'Playdate',
-	            start  : '2014-04-14'
+	            start  : '2014-04-14',
+	            id     : 1
 	        }
 	    ],
 	    dayClick: function(date, allDay, jsEvent, view) {
@@ -23,8 +27,9 @@ $(document).ready(function() {
 
 	    eventClick: function(calEvent, jsEvent, view) {
 
-	    	$('#event-info').css({'display':'inline', 'position':'absolute', 'left':jsEvent.pageX-40, 'top':jsEvent.pageY});
+	    	$('#event-info').css({'display':'inline', 'position':'absolute', 'left':jsEvent.pageX-90, 'top':jsEvent.pageY});
 	    	$('#event-info-content').html('<p>'+calEvent.title+'</p>');
+	    	eventtodelete = calEvent;
 
 	    }
     });
@@ -32,9 +37,10 @@ $(document).ready(function() {
 	$('#add-event-btn').click(function(e) {
 		e.preventDefault();
 		if ($('#add-event-field').val() != '') {
-			$('#calendar').fullCalendar('renderEvent', {title:$('#add-event-field').val(), start:eventdate});
+			$('#calendar').fullCalendar('renderEvent', {title:$('#add-event-field').val(), start:eventdate, id:event_id}, true);
 			$('#add-event').css({'display':'none'});
 			$('#add-event-field').val('');
+			event_id += 1;
 		}
 	});
 
@@ -42,6 +48,15 @@ $(document).ready(function() {
 		e.preventDefault();
 		$('#event-info').css({'display':'none'});
 		$('#event-info-content').html('');
+	});
+	$('#delete-event-btn').click(function(e) {
+		e.preventDefault();
+		if(confirm('Delete event, '+eventtodelete.title+'?')) {
+			$('#calendar').fullCalendar("removeEvents", eventtodelete.id);
+    		$('#calendar').fullCalendar("rerenderEvents");
+    		$('#event-info').css({'display':'none'});
+			$('#event-info-content').html('');
+		}
 	});
 	$('#cancel-event-btn').click(function(e) {
 		e.preventDefault();
