@@ -1,6 +1,6 @@
 #timeline {
-    background-color: #eeddff;
-    width: 900px;
+    background-color: #cfddfc;
+    width: 852px;
     height: 400px;
     position: relative;
     left: 60px;
@@ -15,11 +15,22 @@
     position: absolute;
     z-index: 10;
     bottom: 2px;
+    left: -2px;
+}
+
+#trashcan {
+    position: absolute;
+    opacity: 0.4;
+    border-radius: 10px;
+}
+#trashcan:hover {
+    opacity: 1.0;
 }
 
 .staticIcon {
     position: absolute;
     z-index: 11;
+    border-radius: 5px;
 }
 
 .icon {
@@ -30,4 +41,9 @@
 
 .icon:hover {
     opacity:1.0;
+}
+
+#note {
+    position: absolute;
+    z-index: 20;
 }
