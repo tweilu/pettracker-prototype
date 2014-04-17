@@ -20,6 +20,9 @@
     <!-- Calendar styles -->
     <link rel="stylesheet" type="text/css" href="css/fullcalendar.css" />
 
+    <!-- Timeline styles -->
+    <link href="css/timeline.css" rel="stylesheet">
+    
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -88,9 +91,7 @@
           
 
           <h2 class="page-header" style="margin-top:0">Daily Schedule</h2>
-          <div id="pet-schedule">
-            <img id="play-icon" class="schedule-icon" src="img/play-icon.jpg">
-          </div>
+          <div id="timeline"><canvas id="timelineCanvas" height="400" width="852"></canvas><img id="timelineImage" src="img/timeline.png" align="middle"/></div>
         </div>
       </div>
     </div>
@@ -125,5 +126,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/mypetpage.js"></script>
     <script type="text/javascript" src="js/fullcalendar.min.js"></script>
+    <script src="js/timeline.js"></script>
   </body>
 </html>
