@@ -28,12 +28,22 @@ $(document).ready(function() {
 	            title  : 'Playdate',
 	            start  : '2014-04-14'
 	        }
-	    ]
+	    ],
+
+	    eventClick: function(calEvent, jsEvent, view) {
+
+	    	$('#event-info').css({'display':'inline', 'position':'absolute', 'left':jsEvent.pageX-40, 'top':jsEvent.pageY});
+	    	$('#event-info-content').html('<p>'+calEvent.title+'</p>');
+
+	    }
     });
 
-    
+    $('#close-event-info').click(function(e) {
+		e.preventDefault();
+		$('#event-info').css({'display':'none'});
+		$('#event-info-content').html('');
+	});
 
-	
 
 	/*
 			<div id="addpet-form">
