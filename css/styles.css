@@ -196,9 +196,17 @@ input[type=file] {
   font-size: 2em;
 }
 
+.aboutlink {
+  font-size: 1em;
+}
+
 @media (min-width: 768px) {
   .main {
     padding-right: 40px;
     padding-left: 40px;
   }
+}
+
+.about {
+  text-align: center;
 }
