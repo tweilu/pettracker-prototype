@@ -29,69 +29,49 @@
 
   <body>
 
-     <div class="container-fluid">
+    <!--
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-10">
+          <img class="profile-pic img-circle" src="profile.jpg" />
+          <h1>Tom Hardy<br /><small>Cambridge, MA</small></h1>
+        </div>
+      </div>
+    </div>--><!-- /.container -->
+
+    <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar" id="sidebar" role="navigation">
+          <div class="logo">pet tracker</div>
           <ul class="nav nav-sidebar">
-            <li class="category"><a href="index.html">My Pets</a></li>
+            <li class="active category"><a href="index.html">My Pets</a></li>
             <li class="subcategory"><a href="maximus.html">Maximus</a></li>
             <li class="subcategory"><a href="frodo.html">Frodo</a></li>
           </ul>
           <ul class="nav nav-sidebar">
             <li class ="category"><a href="sittingpets.html">Pets I'm Sitting</a></li>
             <li class="subcategory"><a href="john.html">John</a></li>
-            <li class="active subcategory"><a href="frog.html">Frog</a></li>
+            <li class="subcategory"><a href="frog.html">Frog</a></li>
           </ul>
           <ul class="nav nav-sidebar">
         </div>
 
 
         <div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2 main">
-
-
-          <h1 class="page-header">
-            Frog
-            <span style="float:right">
-              <small>
-                Owner: <img class="sitter-pic img-circle" src="img/mila.jpg" /> Mila Kunis | <a href="#">Stop Sitting</a>
-              </small>
-            </span>
-          </h1>
+          <h1 class="page-header">About Pet Tracker</h1>
 
           <div class="row">
-            <div class="col-md-9">
+            <h2>Pet Tracker makes it easy for you to care for pets by tracking important information and facilitating in owner-sitter contact<h2>
 
-              <div class="pull-left">
-                <img class="pet-pic" src="img/frog.jpg" />
-              </div>
+              (Owner Pic) Owner - Keep your pets' factsheet stored in their profiles so sitters have all the info they need.
+              Recieve updates on how your pets are doing while they're being sat.
 
-              <h1><small>Located in Cambridge, MA</small></h1>
-              <p class="pet-description-text">I'm a frog named Frog, and I love boxes.</p>            
-
-            </div>
-
-            <div class="col-md-3 calendar">
-              <h3>Appointments</h3>
-              <div id="calendar"></div>
-            </div>
-
-          </div>
-          
-
-          <h2 class="page-header" style="margin-top:0">Daily Schedule</h2>
-          <div id="pet-schedule">
-            <img id="play-icon" class="schedule-icon" src="img/play-icon.jpg">
+              <div></div>
+              (Sitter Pic) Sitter - Manage many pets at once with day-to-day schedules and a collective calendar for important appointments
+              Inform the owners how their pets are doing so they don't get worried.
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- for calendar event info -->
-    <div id="event-info">
-      <div id="close-event-info">
-        <a href="#">&times;</a>
-      </div>
-      <div id="event-info-content">
       </div>
     </div>
 
@@ -100,11 +80,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/jquery.ui.draggable.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/theirpetpage.js"></script>
+    <script src="js/mypets.js"></script>
     <script type="text/javascript" src="js/fullcalendar.min.js"></script>
   </body>
 </html>

@@ -69,22 +69,47 @@ input[type=file] {
 #addpet-btn {
   margin-left:30px;
 }
-.calendar h3 {
-  margin-top: 0px;
-}
 .controls {
   border:1px solid #f5f5f5;
   padding:5px;
   text-align: right;
 }
+
+/* CALENDAR WIDGET */
+.calendar h3 {
+  margin-top: 0px;
+}
 .fc-header {
   display:none;
+}
+.fc-event {
+  height:10px;
 }
 .fc-event-title {
   display:none;
 }
 .fc-day-number {
   font-size: .7em;
+}
+#event-info {
+  width:80px;
+  height:50px;
+  background-color: #f5f5f5;
+  display:none;
+  z-index:10;
+}
+#event-info-content {
+  margin:5px;
+}
+#close-event-info {
+  position:absolute;
+  right:0;
+  margin-right:5px;
+}
+#add-event {
+  display:none;
+  background-color: #f5f5f5;
+  z-index:10;
 }
 
 /* INDIVIDUAL PETS page */
@@ -158,6 +183,10 @@ input[type=file] {
 .nav-sidebar > .active > a:hover {
   color: #fff;
   background-color: #428bca;
+}
+
+.logo {
+  font-size: 2em;
 }
 
 @media (min-width: 768px) {
