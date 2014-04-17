@@ -32,7 +32,7 @@ $(document).ready(function() {
 
 	    eventClick: function(calEvent, jsEvent, view) {
 
-	    	$('#event-info').css({'display':'inline', 'position':'absolute', 'left':jsEvent.pageX-40, 'top':jsEvent.pageY});
+	    	$('#event-info').css({'display':'inline', 'position':'absolute', 'left':jsEvent.pageX-90, 'top':jsEvent.pageY});
 	    	$('#event-info-content').html('<p>'+calEvent.title+'</p>');
 
 	    }
