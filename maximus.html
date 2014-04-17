@@ -48,7 +48,24 @@
 
         <div class="col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2 main">
 
-          <h1 class="page-header">Maximus<span style="float:right"><small>Sitter: <img class="sitter-pic img-circle" src="img/jgl.png" /> Joseph Gordon-Levitt | <a href="#">Remove</a></small></span></h1>
+          <h1 class="page-header">
+            Maximus
+            <span id="petsitter-info" class="pull-right">
+              <small>
+                Sitter: <img class="sitter-pic img-circle" src="img/jgl.png" /> Joseph Gordon-Levitt | <a id="remove-sitter" href="#">Remove</a>
+              </small>
+            </span>
+            <span id="petsitter-form" class="pull-right" style="display:none">
+              <small>
+                <form class="form-inline" role="form">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="sitter-email" placeholder="Sitter Email Address">
+                  </div>
+                  <button type="submit" id="sitter-submit-btn" class="btn btn-default">Add Sitter</button>
+                </form>
+              </small>
+            </span>
+          </h1>
 
           <div class="row">
             <div class="col-md-9">
