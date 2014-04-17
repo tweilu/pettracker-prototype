@@ -193,7 +193,14 @@ input[type=file] {
 }
 
 .logo {
-  font-size: 2em;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+.logo .logo-text {
+  color:#000;
+}
+.logo .about-link {
+  font-size: .45em;
 }
 
 @media (min-width: 768px) {
